@@ -21,7 +21,10 @@ function StarRating() {
           <Star key={i} selected={i < selectedStars} select={() => setSelectedStars(i + 1)}/>
         ))}
       </div>
-      {selectedStars > 0 && <h2>{starMessages[selectedStars]}</h2>}
+      <div className="message-container">
+        {selectedStars > 0 && <h2>{starMessages[selectedStars]}</h2>}
+      </div>
+      
     </>
   )
 }

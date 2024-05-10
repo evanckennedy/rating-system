@@ -106,9 +106,17 @@ button {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 h2 {
   color: var(--white);
+  font-size: 3rem;
 }
 
 .star {
   font-size: 5rem;
   cursor: pointer;
+}
+
+.message-container {
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
