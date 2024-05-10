@@ -1,5 +1,6 @@
 import Dialog from "./components/Dialog";
 import React, { useState } from 'react';
+import Star from "./components/Star";
 
 function App() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -13,6 +14,7 @@ function App() {
       <main>
         <button className="open-button" onClick={() => setIsDialogOpen(true)}>open dialog</button>
         {isDialogOpen && <Dialog onClose={handleCloseDialog} />}
+        <Star />
       </main>
       
     </>

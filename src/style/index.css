@@ -89,3 +89,11 @@ button {
   align-self: flex-end;
   background-color: var(--purple-button);
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Star                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.star {
+  font-size: 5rem;
+  cursor: pointer;
+}
