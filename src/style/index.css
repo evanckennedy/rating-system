@@ -41,7 +41,6 @@
 :root {
   --app-background-dark: rgb(24, 23, 32);
   --white: #f5f5f6;
-  --purple: #9b59b6;
   --purple-button: #833cff;
   --blue: #007bff;
 }
@@ -76,6 +75,10 @@ button {
   position: fixed;
   bottom: 30px;
   right: 30px;
+
+  &:hover {
+    background-color: #1d8aff;
+  }
 }
 
 .dialog {
@@ -86,10 +89,12 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
 }
 
 .dialog-content {
   text-align: center;
+  color: var(--app-background-dark);
   
   h3 {
     line-height: 1;
@@ -99,6 +104,10 @@ button {
 .dialog button {
   align-self: flex-end;
   background-color: var(--purple-button);
+
+  &:hover {
+    background-color: #7626ff;
+  }
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
