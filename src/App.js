@@ -1,6 +1,6 @@
 import Dialog from "./components/Dialog";
 import React, { useState } from 'react';
-import Star from "./components/Star";
+import StarRating from "./components/StarRating";
 
 function App() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -11,10 +11,12 @@ function App() {
 
   return (
     <>
-      <main>
+      <main className="center">
+        <div>
+          <StarRating />
+        </div>
         <button className="open-button" onClick={() => setIsDialogOpen(true)}>open dialog</button>
         {isDialogOpen && <Dialog onClose={handleCloseDialog} />}
-        <Star />
       </main>
       
     </>
