@@ -9,8 +9,12 @@ function App() {
   }
 
   return (
-    <> 
-      <button onClick={() => setIsDialogOpen(true)}>open dialog</button>
+    <>
+      <main>
+        <button className="open-button" onClick={() => setIsDialogOpen(true)}>open dialog</button>
+        {isDialogOpen && <Dialog onClose={handleCloseDialog} />}
+      </main>
+      
     </>
   );
 }
